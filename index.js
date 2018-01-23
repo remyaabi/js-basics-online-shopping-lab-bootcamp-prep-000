@@ -110,7 +110,8 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
+  var message;
   if (arguments.length===0){
-    
+    message="Sorry, we don't have a credit card on file for you.";
   }
 }
