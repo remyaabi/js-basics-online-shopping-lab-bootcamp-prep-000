@@ -46,7 +46,7 @@ function viewCart() {
               viewCartLine=`${viewCartLine} ${[keys]} at $${value}.`;
                }else if(i===cart.length-1){
                    
-                   viewCartLine=`${viewCartLine}, and ${[keys]} at $${value}.`
+                   viewCartLine=`${viewCartLine} and ${[keys]} at $${value}.`
                }else{
                 
                  if (viewCartLine!="In your cart, you have"){
