@@ -38,18 +38,17 @@ function viewCart() {
            var  itemObj=cart[i];
           
            var keys=Object.keys(itemObj);
-           console.log(`keys ${keys}`);
+          
             var value=itemObj[keys];
-             console.log(`value ${value}`)
+             
           
              if(cart.length==1){
               viewCartLine=`${viewCartLine} ${[keys]} at $${value}.`;
                }else if(i===cart.length-1){
-                   console.log("eneterde length else")
+                   
                    viewCartLine=`${viewCartLine}, and ${[keys]} at $${value}.`
                }else{
-                 console.log("eneterde last else")
-                 console.log(`viewCartLine: ${viewCartLine}`);
+                
                  if (viewCartLine!="In your cart, you have"){
                   viewCartLine=`${viewCartLine}, ${[keys]} at $${value}`
                }else{
@@ -114,7 +113,7 @@ function placeOrder(cardNumber) {
   if (arguments.length===0){
     message="Sorry, we don't have a credit card on file for you.";
   }else{
-    message="Your total cost is $" +total()+", which will be charged to the card " + cardNumber+".";
+    message=`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
       var c=[];
     var cart=setCart(c) 
   }
