@@ -1,4 +1,5 @@
 var cart = [];
+var cardNumber=876950;
 
 function getCart() {
  return cart;
