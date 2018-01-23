@@ -110,4 +110,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
+  if (arguments.length===0){
+    
+  }
 }
