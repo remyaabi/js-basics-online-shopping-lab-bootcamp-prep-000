@@ -61,7 +61,7 @@ function viewCart() {
   else{
     viewCartLine="Your shopping cart is empty."
   }
-  return viewCartLine;
+  console.log(viewCartLine);
 }
 
 function total() {
